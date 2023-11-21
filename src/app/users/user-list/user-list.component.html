@@ -1,0 +1,13 @@
+<div class="container mt-4">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Lista de Usuarios</h2>
+      <ul class="list-group">
+        <li *ngFor="let user of users" class="list-group-item d-flex justify-content-between align-items-center">
+          {{ user.name }}
+          <button (click)="showDetails(user)" class="btn btn-dark btn-sm">Detalles</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>

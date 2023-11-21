@@ -1,0 +1,12 @@
+<div class="container mt-4">
+  <div class="card">
+    <div class="card-body">
+      <h2 class="card-title">Lista de Publicaciones</h2>
+      <ul class="list-group">
+        <li *ngFor="let post of posts" class="list-group-item">
+          <a (click)="goToDetails(post)" class="card-link">{{ post.title }}</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
